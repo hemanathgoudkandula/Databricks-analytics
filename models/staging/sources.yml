@@ -1,1 +1,8 @@
 version: 2
+sources:
+  - name: claims_source
+    database: "{{ env_var('DBT_SOURCE_CATALOG', 'landing_zone') }}"
+    schema: "{{ env_var('DBT_HEALTHVERITY_SCHEMA_NAME') }}"
+    tables:
+      - name: diagnosis
+      - name: enrollment
