@@ -41,18 +41,18 @@ models:
     staging:
       +schema: staging
       +materialized: view
-    intermediate:
-      +schema: intermediate
-      +materialized: view
-    marts:
-      dimensions:
-        +schema: dimensions
-        +materialized: table
-      facts:
-        +schema: facts
-        +materialized: incremental
-        +incremental_strategy: merge
-        +on_schema_change: sync_all_columns
-      reporting:
-        +schema: reporting
-        +materialized: table
+#    intermediate:
+#      +schema: intermediate
+#      +materialized: view
+#    marts:
+#      dimensions:
+#        +schema: dimensions
+#        +materialized: table
+#      facts:
+#        +schema: facts
+#        +materialized: incremental
+#        +incremental_strategy: merge
+#        +on_schema_change: sync_all_columns
+#      reporting:
+#        +schema: reporting
+#        +materialized: table
