@@ -1,6 +1,6 @@
 {% macro generate_schema_name(custom_schema_name, node) -%}
  
-    {%- set shared_targets = ['shared_dev', 'qa', 'uat'] -%}
+    {%- set shared_targets = ['dev', 'qa', 'uat'] -%}
     {%- set default_schema = target.schema -%}
  
     {%- if custom_schema_name is none -%}
